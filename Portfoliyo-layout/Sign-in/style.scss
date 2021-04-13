@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "colors";
+@import "input";
+
+$f: flex;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+%d-flex{
+    display: $f;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color:$color3;
+    &:hover{
+        color:$color3;
+    }
+}
+
+.container{
+    max-width: 500px;
+    margin: auto;
+    .block{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        
+        border: 1px solid $bColor;
+        border-radius: 10px;
+        img{
+            width: 10rem;
+            height: 6rem;
+            margin: 1rem;
+        }
+        .signin{
+            margin: -2rem 0 0.5rem 0;
+            font-size: 1.4rem;
+        }
+        .use{
+            color: $color2;
+            font-weight: bold;
+        }
+        .box{
+            width: 100%;
+            text-align: center;
+            margin: 2rem;
+            margin-bottom: 0.6rem;
+        }
+        .purple{
+            color: $color3;
+            font-weight: bold;
+            width: 86%;
+        }
+        .learn{ 
+            width: 100%;
+            margin: 3rem 0rem;
+            padding: 0 2rem;
+            .line1{
+                color: $color2;
+            }
+        }
+        .options{
+            @extend %d-flex;
+            width: 100%;
+            padding: 0 2rem 4rem;
+            .create{
+                color: $color3;
+                font-weight: bold;
+                padding: 5px 0;
+            }
+            button{
+                border: 1px solid $color3;
+                background: $color3;
+                border-radius: 5px;
+                color: $color1;
+                padding: 0.5rem 1.7rem;
+                font-size: 1rem;  
+                outline: none;          
+            }
+
+        }
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        .right{
+            display: flex;
+            color: $color2;
+        }
+    }
+}

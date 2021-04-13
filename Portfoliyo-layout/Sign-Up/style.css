@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  color: #5f6368;
+  font-size: 0.8rem;
+}
+
+.btn, .container .card .sign-in .btn-primary {
+  padding: 5px 20px;
+  border: 1px solid #3076E9;
+}
+
+a {
+  text-decoration: none;
+  color: #3076E9;
+}
+a:hover {
+  color: #3076E9;
+}
+
+.container .card .pass, .container .card .mail, .container .card .name .last, .container .card .name .first {
+  margin: 10px 0;
+  font-size: 14px;
+  height: 20px;
+  padding: 15px 8px;
+  border: 1px solid #DADCE0;
+  border-radius: 4px;
+  outline: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+.container .card {
+  padding: 30px;
+  border: 2px solid #DADCE0;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.container .card h4 {
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3333;
+}
+.container .card .name {
+  margin-top: 20px;
+}
+.container .card .mail {
+  padding-bottom: 25px;
+  margin-right: 17px;
+}
+.container .card .mail .user {
+  width: 77%;
+  border: none;
+}
+.container .card .h-address {
+  color: #3076E9;
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+}
+.container .card .show {
+  height: 12px;
+  margin-top: 11px;
+}
+.container .card .show input {
+  margin-right: 5px;
+}
+.container .card .sign-in {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
+}
+.container .card .sign-in div {
+  color: #3076E9;
+}
+.container .card .sign-in .btn-primary {
+  color: #fff;
+  background-color: #3076E9;
+  border-radius: 4px;
+}
+.container .card .right figcaption {
+  text-align: center;
+}
+.container .foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.container .foot .right {
+  display: flex;
+  color: #5f6368;
+}
+
+/*# sourceMappingURL=style.css.map */
