@@ -6,6 +6,7 @@ input[type=email] {
   border-radius: 5px;
   color: #818389;
   font-size: 1rem;
+  outline: none;
 }
 
 * {
@@ -25,7 +26,7 @@ a {
   color: #3076E9;
 }
 a:hover {
-  color: #3076E9;
+  color: #4285f1;
 }
 
 .container {
@@ -52,7 +53,7 @@ a:hover {
 }
 .container .block .use {
   color: #818389;
-  font-weight: bold;
+  font-weight: medium;
 }
 .container .block .box {
   width: 100%;
@@ -62,7 +63,7 @@ a:hover {
 }
 .container .block .purple {
   color: #3076E9;
-  font-weight: bold;
+  font-weight: medium;
   width: 86%;
 }
 .container .block .learn {
@@ -79,7 +80,7 @@ a:hover {
 }
 .container .block .options .create {
   color: #3076E9;
-  font-weight: bold;
+  font-weight: medium;
   padding: 5px 0;
 }
 .container .block .options button {
@@ -90,6 +91,10 @@ a:hover {
   padding: 0.5rem 1.7rem;
   font-size: 1rem;
   outline: none;
+  cursor: pointer;
+}
+.container .block .options button:hover {
+  background-color: #4285f1;
 }
 .container .foot {
   display: flex;

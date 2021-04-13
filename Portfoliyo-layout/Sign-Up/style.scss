@@ -19,7 +19,7 @@ a{
     text-decoration: none;
     color:$primary-color;
     &:hover{
-        color:$primary-color;
+        color:$hover-color;
     }
 }
 %input{
@@ -62,7 +62,8 @@ a{
             margin-right: 17px;
             .user{
                 width:77%;
-                border:none
+                border:none;
+                outline: none;
             }
         }
         
@@ -86,7 +87,7 @@ a{
         .sign-in{
             display: flex;
             justify-content: space-between;
-            margin-top:25px;
+            margin-top:35px;
             align-items: center;
             div{
                 color:$primary-color;
@@ -96,6 +97,10 @@ a{
                 color:$text-white;
                 background-color: $primary-color;
                 border-radius: 4px;
+                cursor: pointer;
+                &:hover{
+                    background-color:$hover-color
+                }
             
             }
         }

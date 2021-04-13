@@ -3,6 +3,7 @@ input[type="email"]{
     padding: 1rem 0.5rem;
     border: 1px solid $bColor;
     border-radius: 5px;
-    color: $color2;
+    color: $para-color;
     font-size: 1rem;
+    outline: none;
 }

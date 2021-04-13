@@ -17,9 +17,9 @@ $f: flex;
 }
 a{
     text-decoration: none;
-    color:$color3;
+    color:$primary-color;
     &:hover{
-        color:$color3;
+        color:$hover-color;
     }
 }
 
@@ -45,8 +45,8 @@ a{
             font-size: 1.4rem;
         }
         .use{
-            color: $color2;
-            font-weight: bold;
+            color: $para-color;
+            font-weight: medium;
         }
         .box{
             width: 100%;
@@ -55,8 +55,8 @@ a{
             margin-bottom: 0.6rem;
         }
         .purple{
-            color: $color3;
-            font-weight: bold;
+            color: $primary-color;
+            font-weight: medium;
             width: 86%;
         }
         .learn{ 
@@ -64,7 +64,7 @@ a{
             margin: 3rem 0rem;
             padding: 0 2rem;
             .line1{
-                color: $color2;
+                color: $para-color;
             }
         }
         .options{
@@ -72,18 +72,22 @@ a{
             width: 100%;
             padding: 0 2rem 4rem;
             .create{
-                color: $color3;
-                font-weight: bold;
+                color: $primary-color;
+                font-weight: medium;
                 padding: 5px 0;
             }
             button{
-                border: 1px solid $color3;
-                background: $color3;
+                border: 1px solid $primary-color;
+                background: $primary-color;
                 border-radius: 5px;
-                color: $color1;
+                color: $text-white;
                 padding: 0.5rem 1.7rem;
                 font-size: 1rem;  
-                outline: none;          
+                outline: none;  
+                cursor: pointer;  
+                &:hover{
+                    background-color:$hover-color
+                }      
             }
 
         }
@@ -94,7 +98,7 @@ a{
         margin: 1rem 0;
         .right{
             display: flex;
-            color: $color2;
+            color: $para-color;
         }
     }
 }
