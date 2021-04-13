@@ -126,4 +126,13 @@ a{
 
 }
 
+@media only screen and (max-width:786px){
+    .container {
+        .card{
+            flex-direction: column;
+        }
+    }
+
+}
+
 
