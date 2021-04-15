@@ -26,7 +26,6 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 1.3rem;
   max-width: 1400px;
 }
 
@@ -76,6 +75,7 @@ input:placeholder-shown {
 .services {
   display: flex;
   justify-content: space-between;
+  margin-top: 1.3rem;
 }
 .services .jm-services {
   background-color: #fff;
@@ -91,7 +91,7 @@ input:placeholder-shown {
 .services .features div {
   display: inline;
   margin-left: 0.4rem;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   border-right: 1px solid #dee2e6;
 }
 .services .features div:last-child {
@@ -103,6 +103,7 @@ input:placeholder-shown {
 
 .business-section {
   display: flex;
+  margin-top: 1.3rem;
 }
 .business-section .business-text {
   background-color: #fff;
@@ -129,6 +130,7 @@ input:placeholder-shown {
   display: flex;
   text-align: center;
   color: #fff;
+  margin-top: 1.3rem;
 }
 .cards h2 {
   text-transform: uppercase;
@@ -155,6 +157,7 @@ input:placeholder-shown {
 .projects {
   background-color: #fff;
   padding: 2rem;
+  margin-top: 1.3rem;
 }
 .projects h4 {
   color: #0979FA;
@@ -164,28 +167,32 @@ input:placeholder-shown {
 .projects .card-deck {
   display: flex;
 }
-.projects .card-deck .img_bg {
+.projects .card-deck .card {
+  position: relative;
+  width: 100%;
+  margin-right: 2rem;
+  height: 169px;
   background-image: url("https://content.thriveglobal.com/wp-content/uploads/2020/02/employee_behavior.jpeg");
   background-size: cover;
   border: none;
   border-radius: 0%;
 }
-.projects .card-deck .card {
-  position: relative;
-  width: 100%;
-  margin-right: 2rem;
-}
 .projects .card-deck .card .card-footer {
   position: absolute;
-  background-color: #595049;
-  opacity: 0.9;
   color: #fff;
   bottom: 0;
+  width: 100%;
 }
-.projects .card-deck .card p {
+.projects .card-deck .card .card-footer span {
+  background-color: #0979FA;
+  padding: 10px;
+}
+.projects .card-deck .card .card-footer p {
   font-size: 0.9rem;
   padding: 1rem;
   text-align: center;
+  background-color: #595049;
+  opacity: 0.9;
 }
 .projects .card-deck .card:last-child {
   margin-right: 0rem;
@@ -193,6 +200,7 @@ input:placeholder-shown {
 
 .testimonials {
   display: flex;
+  margin-top: 1.3rem;
 }
 .testimonials .few_words-section {
   display: flex;
@@ -236,6 +244,7 @@ input:placeholder-shown {
   background-color: #fff;
   text-align: center;
   padding-bottom: 2rem;
+  margin-top: 1.3rem;
 }
 .testimonials .feedback .rounded-circle {
   width: 100px;
@@ -253,6 +262,7 @@ input:placeholder-shown {
 
 footer {
   background-color: #E7E7E7;
+  margin-top: 1.3rem;
 }
 footer h4 {
   color: #6c757d !important;
@@ -301,10 +311,10 @@ footer .footer-content .connected i {
   font-size: 3rem;
 }
 footer .footer-content .connected .fb {
-  color: #0000ff;
+  color: #0979FA;
 }
 footer .footer-content .connected .google {
-  color: #f32929;
+  color: #f32f2f;
 }
 footer .footer-content .connected .twitter {
   color: #2ea3ca;
@@ -325,10 +335,6 @@ footer .rights span {
 }
 
 @media only screen and (max-width: 786px) {
-  header .row {
-    flex-direction: column;
-  }
-
   .services {
     flex-direction: column;
   }
@@ -351,8 +357,12 @@ footer .rights span {
     margin-bottom: 1rem;
   }
 
-  .card-deck {
-    flex-direction: column;
+  .projects .card-deck {
+    display: block;
+  }
+  .projects .card-deck .card {
+    margin-bottom: 1rem;
+    height: 257px;
   }
 
   .testimonials {

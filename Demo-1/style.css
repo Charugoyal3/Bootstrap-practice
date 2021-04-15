@@ -9,80 +9,81 @@ input:placeholder-shown {
     font-style: italic;
 }
 
+/* Header */
+
 header .row {
     align-items: baseline;
 }
-.color1{
+.card-body i {
+    font-size: 55px;
+    margin: 0.4rem;
+
+}
+
+/* Latest Projects */
+
+.card1{
     background-color: #047EBB;
     line-height: 1.3rem;
     font-size: 0.9rem;
 }
 
-.color2{
+.card2{
     background-color: #A0AF46;
     line-height: 1.3rem;
     font-size: 0.9rem;
 }
-.color3{
+.card3{
     background-color: #E48F62;
     line-height: 1.3rem;
     font-size: 0.9rem;
 }
-
+.card-footer{
+    padding: 0;
+}
+.card-footer div{
+    background-color: blue;
+    display: inline;
+}
+.card-footer p{
+    background-color: #595049;
+    opacity:0.9;
+    font-size: 0.8rem;
+    margin: 0rem;
+    padding-top: 0.5rem;
+}
 .img_bg{
     background-image: url("https://content.thriveglobal.com/wp-content/uploads/2020/02/employee_behavior.jpeg");
     background-size: cover;
     border: none;
     border-radius: 0%;
+    height:169px;
 }
-.customer_img{
-    z-index:2;
-}
+
 .card-body>div{
     position: absolute;
-    top: 64px;
+    top: 4.5rem;
     left: 0;
     background-color: blue;
     padding: 3px;
     font-size: 17px;
 }
-.card .card-footer{
-    background-color: #595049;
-    opacity:0.9;
-}
 
-.card .card-footer>p{
-    font-size: 0.6rem;
-    margin-bottom: 0.4rem;
-}
-.card-body i {
-    font-size:70px;
-    margin-bottom: 1rem;
-}
-.bg_footer{
-    background-color:#E7E7E7;
-}
 
+/* Just Few words */
 .img_potrait{
     background-image: url("https://i.pinimg.com/474x/70/ab/cd/70abcd891e11a9511fe348b85ef34091--corporate-portrait-contemporary-office.jpg");
     background-size: cover;
 }
-
-.rounded-circle{
-    width: 100px;
-    height: 100px;
-    margin-top: -47px;
-}
 .text1{
     color:#558295;
 }
-
-.few_icon{
+.few-section_icon{
     list-style: none;
 }
 
-.few_icon>li:before {
-content: "\f152"; /* FontAwesome Unicode */
+.few-section_icon>li:before {
+content: "\f152";
 font-family: FontAwesome;
 display: inline-block;
 margin-left: -1.3em; 
@@ -90,11 +91,16 @@ width: 1.3em;
 color:#558295;
 }
 
-.icon{
+.rounded-circle{
+    width: 100px;
+    height: 100px;
+    margin-top: -47px;
+}
+.articles-footer{
     list-style: none;
 }
 
-.icon>li:before {
+.articles-footer>li:before {
     content: "\f054";
     font-family: FontAwesome;
     display: inline-block;
@@ -105,6 +111,13 @@ color:#558295;
     font-size: 0.8rem;
 }
 
+/* Footer */
+.bg_footer{
+    background-color:#E7E7E7;
+}
+
+
+/* Footer Icons */
 .stay_icons i{
     font-size:50px;
     border-radius: 0%;
