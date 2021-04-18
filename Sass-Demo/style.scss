@@ -1,4 +1,8 @@
 @import 'variables';
+
+@mixin bordered($color, $width) {
+    border-right: $width solid $color;
+}
 *{
     margin:0;
     padding:0;
@@ -54,12 +58,12 @@ header{
            
             .form-control{
                 border: none;
-                border-right:1px solid $border;
+                @include bordered($border, 1px);  // Call mixin with two values
                 height: 28px;
                 padding-left: 18px;
                 width: 98px;
                 &:first-child{
-                    border-left:1px solid $border;
+                    @include bordered($border, 1px);  
                 }
             }
             .btn-secondary{
@@ -373,11 +377,11 @@ footer{
 }
 
 @media only screen and (max-width:786px){
-    header{
-        .row{
-            // flex-direction: column;
-        }
-    }
+    // header{
+    //     .row{
+    //         // flex-direction: column;
+    //     }
+    // }
     .services{
         flex-direction: column;
         .features{

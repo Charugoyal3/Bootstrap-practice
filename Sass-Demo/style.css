@@ -59,7 +59,7 @@ header .row .input-group .form-control {
   width: 98px;
 }
 header .row .input-group .form-control:first-child {
-  border-left: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
 }
 header .row .input-group .btn-secondary {
   color: #6c757d !important;
