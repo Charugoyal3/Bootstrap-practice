@@ -1,0 +1,45 @@
+.scenery{
+    position: absolute;
+}
+.sun{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: rgb(243, 243, 87);
+    position: absolute;
+    left: 41%;
+    top:20%;
+    animation: movesun 3s infinite alternate;
+}
+.mountain{
+    display: flex;
+}
+.mountain1{
+    height:200px;
+    border-left: 225px solid transparent;
+    border-right: 382px solid transparent;
+    border-bottom: 149px solid #3678B8;
+}
+.mountain2{
+    margin-left: -421px;
+    border-left: 225px solid transparent;
+    border-right: 195px solid transparent;
+    border-bottom: 149px solid #3678B8;
+
+         
+ }
+ .mountain3{
+    border-left: 225px solid transparent;
+    border-right: 251px solid transparent;
+    border-bottom: 149px solid #3678B8;
+    margin-left: -239px;
+         
+ }
+
+ @keyframes movesun {
+     to{
+         top:0%;
+     }
+
+     
+ }
